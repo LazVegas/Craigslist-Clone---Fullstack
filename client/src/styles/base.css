@@ -20,3 +20,248 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* ---------- Start: apps ---------- */
+.outerWrapper {
+  display: flex;
+  width: 1300px;
+  margin: 0 auto;
+}
+/* ---------- Start: apps ---------- */
+
+
+/* ---------- Start: leftbar ---------- */
+.leftbar {
+  width: 280px;
+  margin-top: 30px;
+  background-color:rgb(244,244,244);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#logo {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#postlks {
+  margin: 17px 0;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+#postlks li {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+#leftbar li, #leftbar a {
+  padding: 2px 0;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  font-family: "Arial", sans-serif;
+}
+
+#search-input {
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+}
+
+#calban {
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cal {
+  margin: 0 auto;
+  background: #ccc;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cal .dys th, cal td {
+  border: 1px solid #ccc;
+}
+
+.cal td {
+  background: white;
+  padding: 2px;
+}
+
+#leftlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+#leftlinks a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* ---------- End: leftbar ---------- */
+
+/* ---------- Start: main ---------- */
+
+.mainContainer {
+  width: 750px;
+  margin: 30px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 14px;
+}
+
+.cityName {
+  width: 100%;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  background-color:rgb(244,244,244);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.catContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+.main {
+  margin: 10px;
+}
+
+.parents {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #0000EE;
+  background-color:rgb(244,244,244);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* ---------- End: main ---------- */
+
+/* ---------- Start: rightbar ---------- */
+#rightbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 80%;
+  background-color:rgb(244,244,244);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#chlang {
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+#rightbar a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.nearby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3px 0;
+  font-size: 14px;
+  background-color: white;
+  color: #0000EE;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#other {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#other a {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* ---------- End: rightbar---------- */
+
+.mainPostList, .postForm, .viewPost {
+  width: 750px;
+  margin: 30px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+}
+
+header a, header h1 {
+  margin: 10px;
+  padding: 10px;
+}
+
+form {
+  margin: 10px;
+}
+
+#postItems {
+  margin: 10px;
+  padding: 10px;
+}
+
+#postInput {
+  width: 300px;
+}
+
+#postContent {
+  width: 300px;
+  height: 300px;
+}

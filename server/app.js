@@ -1,12 +1,16 @@
 const createError = require("http-errors")
 const express = require("express")
-const userRouter = require("./routes/users")
 const app = express()
+// ADDED
+const categoryRouter = require('./routes/categoryRouter')
+const postRouter = require('./routes/postRouter')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use("/users", userRouter)
+// CHANGED BOTH OF THESE
+app.use("/categories", categoryRouter)
+app.use("/posts", postRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

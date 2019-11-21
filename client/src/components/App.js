@@ -1,18 +1,27 @@
-import React from "react"
-import { useUsers } from "../hooks"
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Categories from './CategoryList';
+import Posts from "./PostList"
+import CreatePost from "./PostForm"
+import Post from "./ViewPost"
+import Leftbar from './Leftbar';
+import Rightbar from './Rightbar';
 
 function App() {
-  const { users } = useUsers()
-
-  console.log(users)
-
   return (
-    <div>
-      {users.map(user => (
-        <p key={user.id}>{user.name}</p>
-      ))}
-    </div>
+    <Router>
+      <div className="outerWrapper">
+        <Leftbar />
+        <Switch> 
+          <Route exact path="/" exact component={Categories} />
+          <Route exact path="/:slug" component={Posts} />
+          <Route exact path="/:slug/post" component={CreatePost} />       
+          <Route exact path="/post/:id" component={Post} />  
+        </Switch>
+        <Rightbar />
+      </div>
+    </Router>
   )
 }
-
-export default App
+export default App;
